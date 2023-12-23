@@ -1,0 +1,31 @@
+.about-basket{
+    font-size: 25px;
+    color: #f28a2a;
+}
+/* Nail */
+.about-heart{
+    padding-top:3px !important;
+    font-size: 22px;
+    color: #f28a2a;
+}
+.about-price{
+    font-size: 18px;
+}
+.about-img{
+    max-height: 200px;
+}
+.about-footer-card{
+    max-width: 300px;
+}
+.about-comment{
+    max-width: 676px;
+}
+.about_comment_title{
+    border-bottom: 1px solid #555252;
+    border-radius: 15%;
+    padding: 5px;
+}
+.about-active{
+    color: rgb(220, 0, 0);
+    transition: 1s ease;
+}

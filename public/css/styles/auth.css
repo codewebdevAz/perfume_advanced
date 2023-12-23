@@ -1,0 +1,8 @@
+.login-forget-password,
+.login-for-register{
+    font-size: 13px;
+}
+.login-footer-text{
+    display: flex;
+    flex-direction: column;
+}

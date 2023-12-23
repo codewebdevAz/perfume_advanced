@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head.ejs") %>
+</head>
+
+<body>
+    
+    <!-- Navbar -->
+    <%- include("../partials/nav.ejs") %>
+
+    <div class="container">
+        <div class="row mt-5 d-flex justify-content-center aling-items-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <form class="form-control bg-light" method="post">
+                    <div class="text-center">
+                        <label class="label mt-3" for="email">Email</label>
+                        <input class="form-control" type="email" name="email" id="_email">
+                        <label class="label mt-3" for="password">Şifrə</label>
+                        <input class="form-control" type="password" name="password" id="_password">
+                        <div class="login-footer-text">
+                            <a href="/auth/register" class="mt-1 login-forget-password">Şifrənizi unutmusunuz?</a>
+                            <a href="/auth/register" class="login-for-register mt-0">Qeydiyyatdan keç</a>
+                        </div>
+                    </div>
+                    <div class="text-center my-2">
+                        <button class="btn  btn-info border-0 py-0">Daxil ol</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+    <!-- Bootstrap Js  -->
+    <script src="/libr/bootstrap/dist/css/bootstrap.min.css"></script>
+
+    <!-- JavaScript  -->
+    <script src="/static/javaScript/index.js"></script>
+</body>
+</html>

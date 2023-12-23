@@ -1,0 +1,50 @@
+.nav-person-icon{
+    font-size: 29px;
+    color: #f28a2a;
+}
+.nav-search-icon{
+    font-size: 24px;
+    color: #f28a2a;
+}
+.nav-basket-icon{
+    font-size: 24px;
+    color: #f28a2a;
+}
+.nav-title{
+    color: #f28a2a;
+    font-size: 30px;
+}
+
+
+/*! Search css */
+
+.search-img{
+    max-width: 90px;
+    max-height: 100px;
+}
+
+@media (min-width:380px) , (max-width:410px) {
+    .search-img{
+        max-width: 75px;
+        max-height: 100px;
+    }
+}
+@media (max-width:380px) {
+    .search-img{
+        max-width: 70px;
+        max-height: 100px;
+    }
+}
+.nav-search-div{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+.display-none{
+    display: none;
+}
+.search-x{
+    padding: 1px 2px 2px 2px;
+    font-size: 14px;
+}
