@@ -2,9 +2,13 @@ const express = require('express');
 const path = require('path');
 const ejs = require('ejs');
 const sequelize = require("./data/db");
+
 const pageRouters = require('./routes/pageRouters');
-const authControllers = require('./routes/authRoutes');
+const authRoutes = require('./routes/authRoutes');
+const adminRoutes = require("./routes/adminRoutes");
+
 const port = 3000;
+
 const User = require("./models/userModels");
 const Product = require("./models/productModels");
 const Dislike = require("./models/dislikeModels");
@@ -21,7 +25,8 @@ app.use('/libr',express.static(path.join(__dirname, 'node_modules')));
 app.use('/static',express.static(path.join(__dirname, 'public')));
 
 app.use(pageRouters);
-app.use('/auth', authControllers);
+app.use('/auth', authRoutes);
+app.use('/admin', adminRoutes);
 
 // Əlaqələr
 
@@ -52,7 +57,6 @@ Comment.belongsTo(Like);
 Dislike.hasMany(Comment);
 Comment.belongsTo(Dislike);
 
-// Sync
 // (async ()=>{
 //     await sequelize.sync({ force: true });
 // })()

@@ -1,12 +1,13 @@
-const { products } = require("../data/db")
-const User = require("../models/userModels")
+const User = require("../models/userModels");
+const Comment = require("../models/commentModels");
+const Dislike = require("../models/dislikeModels");
+const Like = require("../models/likeModels");
+const Product = require("../models/productModels");
 
 exports.get_register = async function (req,res){
     res.render('auth/register',{
-        title: "Register",
-        products,
+        title: "Register"
     });
-    //Nail
 };
 exports.post_register = async function (req,res){
     try {
@@ -17,7 +18,7 @@ exports.post_register = async function (req,res){
         await User.create({
             name: username,
             email: email,
-            password: password
+            password: password,
         });
 
         res.redirect("/auth/login");
@@ -29,7 +30,6 @@ exports.post_register = async function (req,res){
 exports.get_login = async function (req,res){
     res.render('auth/login',{
         title: "Login",
-        products,
     });
 };
 

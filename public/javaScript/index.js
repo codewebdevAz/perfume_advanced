@@ -149,3 +149,30 @@ for (let i = 1; i <= allBasket.length; i++) {
 totallyPriceEnd();
 
 // ! Basket end
+// start
+
+function showDeleteDiv(th){
+    const adminDeleteDiv = document.querySelector(".admin-delete-div");
+    const adminDeleteProductName = document.querySelector(".admin-delete-product");
+    const adminDeleteDivClass = [...adminDeleteDiv.classList];
+
+    const isHidden = adminDeleteDivClass.some(classname => classname === "display-none");
+
+    if(isHidden){
+        adminDeleteDiv.classList.remove("display-none");
+        adminDeleteProductName.textContent = th.name;
+    }
+};
+
+function hiddenDeleteDiv(){
+    const adminDeleteDiv = document.querySelector(".admin-delete-div");
+    const adminDeleteDivClass = [...adminDeleteDiv.classList];
+
+    const isHidden = adminDeleteDivClass.some(classname => classname === "display-none");
+
+    if(!isHidden){
+        adminDeleteDiv.classList.add("display-none");
+    }
+};
+
+// end

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head.ejs") %>
+</head>
+
+<body>
+    
+    <!-- Navbar -->
+    <%- include("../partials/nav.ejs") %>
+
+    <div class="container">
+        <div class="row mt-5">
+            <form method="post" class="form-control">
+                <div class="col">
+                    <label class="mt-4" for="product_name">Məhsulun adı</label>
+                    <input type="text" name="product_name" class="form-control" id="">
+                </div>
+                <div class="col">
+                    <label class="mt-4" for="product_description">Məhsul haqqında</label>
+                    <textarea name="product_description" class="form-control" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="col">
+                    <label class="mt-4" for="product_gender">Məhsul kim üçündür</label>
+                    <input type="text" class="form-control" name="product_gender" id="">
+                </div>
+                <div class="col">
+                    <label class="mt-4" for="product_imgUrl">Məhsulun şəkli</label>
+                    <input type="file" class="form-control" name="product_imgUrl" id="">
+                </div>
+                <div class="col">
+                    <label class="mt-4" for="product_bPrice">Məhsulun Əvvəlki qiyməti</label>
+                    <input type="text" class="form-control" name="product_bPrice" id="">
+                </div>
+                <div class="col">
+                    <label class="mt-4" for="product_aPrice">Məhsulun Sonrakı qiyməti</label>
+                    <input type="text" class="form-control" name="product_aPrice" id="">
+                </div>
+                <div class="col text-center mt-5">
+                    <button class="btn btn-small btn-warning py-0" type="submit">Redaktə et</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    
+
+    
+    <!-- Bootstrap Js  -->
+    <script src="/libr/bootstrap/dist/css/bootstrap.min.css"></script>
+
+    <!-- JavaScript  -->
+    <script src="/static/javaScript/index.js"></script>
+</body>
+</html>

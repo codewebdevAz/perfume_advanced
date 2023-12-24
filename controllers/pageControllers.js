@@ -1,9 +1,10 @@
-const { products }  = require("../data/db");
+const Product  = require("../models/productModels");
 
 exports.get_blog = async function (req,res){
+
     res.render('users/index',{
         title:'Perfume Store',
-        products,
+        
     });
 };
 
